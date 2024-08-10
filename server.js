@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const morgan = require('morgan');
+const morgan = require("morgan");
 
 const port = process.env.PORT || 3000;
 
@@ -21,7 +21,7 @@ function calculatePrice(distance, demand, timeOfDay) {
   return price;
 }
 
-//Morgan for monitoring 
+//Morgan for monitoring
 app.use(morgan("combined"));
 
 // API endpoint to get the price
